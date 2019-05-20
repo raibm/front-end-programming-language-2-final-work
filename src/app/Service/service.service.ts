@@ -25,4 +25,8 @@ export class ServiceService {
   updatePessoa(pessoa: Pessoa){
     return this.http.put<Pessoa>(this.Url+"/"+pessoa.id, pessoa);
   }
+
+  deletePessoa(pessoa: Pessoa){
+    return this.http.delete<Pessoa>(this.Url+"/"+pessoa.id);
+  }
 }

@@ -9,13 +9,17 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'lp2';
 
-  constructor(private router: Router){}
+  constructor(private router: Router) { }
 
-  Listar(){
+  Listar() {
     this.router.navigate(["listar"]);
   }
 
-  Novo(){
+  Novo() {
     this.router.navigate(["adicionar"]);
+  }
+
+  getUrl() {
+    return "url(http://kids.pplware.sapo.pt/wp-content/uploads/2018/03/sobreiro_1-600x375.jpg)";
   }
 }

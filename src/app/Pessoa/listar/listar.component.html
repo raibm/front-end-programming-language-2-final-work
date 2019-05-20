@@ -20,7 +20,7 @@
             <td>{{ pessoa.sobrenome }}</td>
             <td>
               <button (click)="editar(pessoa)" class="btn btn-warning">Editar</button>
-              <button class="btn btn-danger">Apagar</button>
+              <button (click)="apagar(pessoa) "class="btn btn-danger">Apagar</button>
             </td>
           </tr>
         </tbody>
