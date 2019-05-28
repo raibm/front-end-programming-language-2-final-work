@@ -18,4 +18,9 @@ export class AppComponent {
   Novo(){
     this.router.navigate(["adicionar"]);
   }
+
+  getUrl()
+{
+  return "url('https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg')";
+}
 }
