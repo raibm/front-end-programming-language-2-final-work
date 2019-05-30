@@ -19,8 +19,13 @@ export class AdicionarComponent implements OnInit {
   }
 
   prepararParaGuardar(nome: String, sobrenome: String){
-    this.pessoa = new Pessoa(nome, sobrenome);
-    this.guardar(this.pessoa);
+    if(nome != undefined && sobrenome != undefined){
+      this.pessoa = new Pessoa(nome, sobrenome);
+      this.guardar(this.pessoa);
+    }else{
+      alert("Favor preencher os campos")
+    }
+
   }
 
   guardar(pessoa: Pessoa ){

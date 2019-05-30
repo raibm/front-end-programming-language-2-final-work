@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="card">
+  <!-- <div class="card"> -->
     <div class="card-header">
       <h3>Pessoas</h3>
     </div>
@@ -14,17 +14,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let pessoa of pessoas" class="text-center">
+          <tr *ngFor="let pessoa of pessoas">
             <td>{{ pessoa.id }}</td>
             <td>{{ pessoa.nome }}</td>
             <td>{{ pessoa.sobrenome }}</td>
             <td>
-              <button (click)="editar(pessoa)" class="btn btn-warning">Editar</button>
+              <button (click)="editar(pessoa)" class="btn btn-warning" style="margin: 1%">Editar</button>
               <button class="btn btn-danger">Apagar</button>
             </td>
           </tr>
         </tbody>
       </table>
-    </div>
+    <!-- </div> -->
   </div>
 </div>
