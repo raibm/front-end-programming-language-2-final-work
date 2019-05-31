@@ -9,18 +9,17 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'lp2';
 
-  constructor(private router: Router){}
+  constructor(private router: Router) { }
 
-  Listar(){
+  Listar() {
     this.router.navigate(["listar"]);
   }
 
-  Novo(){
+  Novo() {
     this.router.navigate(["adicionar"]);
   }
 
   getUrl()
 {
   return "url('https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg')";
-}
 }

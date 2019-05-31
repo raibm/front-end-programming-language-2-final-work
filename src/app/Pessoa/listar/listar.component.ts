@@ -24,10 +24,15 @@ export class ListarComponent implements OnInit {
   }
 
   editar(pessoa: Pessoa){
-    console.log(pessoa)
     localStorage.setItem("id", pessoa.id.toString());
     this.router.navigate((["editar"]));
   }
   
+  apagar(pessoa: Pessoa){
+    this.service.deletePessoa(pessoa).subscribe(valor => {
+      this.pessoas = this.pessoas.filter(p=>p!== pessoa);
+      alert("Pessoa apagada...");
+    })
+  }
 
 }
