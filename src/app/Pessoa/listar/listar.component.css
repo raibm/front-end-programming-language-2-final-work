@@ -1,0 +1,54 @@
+body{
+	font-family: Helvetica, sans-serif;
+}
+a:link, a:visited{
+	color: #ff6600;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+#wrap{
+	width: 1250px;
+	height: 620px;
+	margin: auto;
+	background: #FFE4B5;
+	padding: 10px 20px 10px 20px; 
+}
+header nav ul{
+	list-style: none;
+	padding-left: 0;
+}
+header nav ul li{
+	display: inline;
+	margin-right: 10px;
+}
+header nav ul li a{
+	font-size: 18px;
+}
+#content{
+	float: left;
+	width: 660px;
+}
+#sideBar{
+	float: right;
+	width: 300px;
+}
+#sideBar ul{
+	list-style: none;
+}
+footer{
+	clear: both;
+}
+
+h3{
+    color: #b19e4b; 
+}
+
+th{
+    color: #6d97b9;  
+}
+
+td{
+    color: #b19e4b; 
+}

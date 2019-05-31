@@ -19,7 +19,7 @@ export class AppComponent {
     this.router.navigate(["adicionar"]);
   }
 
-  getUrl() {
-    return "url(http://kids.pplware.sapo.pt/wp-content/uploads/2018/03/sobreiro_1-600x375.jpg)";
-  }
+  getUrl()
+{
+  return "url('https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg')";
 }
