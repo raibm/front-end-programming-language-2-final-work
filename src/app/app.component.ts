@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'lp2';
-
+ng
   constructor(private router: Router) { }
 
   Listar() {
@@ -22,4 +22,6 @@ export class AppComponent {
   getUrl()
 {
   return "url('https://images.wallpaperscraft.com/image/bird_silhouette_vector_134154_1920x1080.jpg')";
+}
+
 }
